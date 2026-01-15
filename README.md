@@ -3,7 +3,8 @@
 
 First smart contract practice
 
-```// SPDX-License-Identifier: MIT
+``` solidity
+// SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
 // This is the contract to hash strings using keccak256
@@ -19,4 +20,5 @@ contract YongHashingString {
         return yongString;
     }    
 }
+
 ```
