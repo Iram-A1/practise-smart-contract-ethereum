@@ -8,21 +8,25 @@ pragma solidity ^0.8.26;
 
 contract NestedMappingPractice {
 
-
     // Declare a state variable as nested mapping datatype
     mapping (address => mapping (string => bool)) private attendanceSheet;
-    
-    // Declare a function to set values fo students
+
+    // Declare a funciton to set values for a student
     function setAttendance (address _addr, string memory _name, bool _isPresent) public {
-        attendanceSheet [_addr][_name] = _isPresent;
+        attendanceSheet[_addr][_name] = _isPresent;
     }
 
-    // Decalre a function to get the value for students
-    function getattendance (address _addr, string memory _name) public view returns (bool) {
+    // Declare a function to get the value for a student
+    function getAttendance (address _addr, string memory _name) public view returns (bool) {
         return attendanceSheet[_addr][_name];
     }
-   
+
+    // Declare a function to toggle the value for a student
+    function toggleAttendance (address _addr, string memory _name) public {
+        attendanceSheet[_addr][_name] = !attendanceSheet[_addr][_name];
     }
+}
+
 ```
 
 ## Mapping Practice
