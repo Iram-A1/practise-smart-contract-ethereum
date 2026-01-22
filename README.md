@@ -32,7 +32,7 @@ contract NestedMappingPractice {
 ## Mapping Practice
 This is a practice mapping from an address to string
 
-```soilidity
+```solidity
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.26;
 
@@ -67,16 +67,16 @@ contract MappingPractice {
 pragma solidity ^0.8.26;
 
 // This is the contract to hash strings using keccak256
-contract YongHashingString {
+contract iramHashingString {
     // declare state varible
-    bytes32 private yongString;
+    bytes32 private iramString;
     // hashing the string
     function hashing (string memory _str) public {
-        yongString = keccak256(bytes(_str));
+        iramString = keccak256(bytes(_str));
     }
     //get the digest of the hasing process
     function getDigest () public view returns (bytes32) {
-        return yongString;
+        return iramString;
     }    
 }
 
