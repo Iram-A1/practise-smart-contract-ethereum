@@ -1,5 +1,32 @@
 # practise-smart-contract-ethereum
 
+## Nested Mapping Practice
+
+```solidity
+
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.26;
+
+contract NestedMappingPractice {
+
+
+    // Declare a state variable as nested mapping datatype
+    mapping (address => mapping (string => bool)) private attendanceSheet;
+    
+    // Declare a function to set values fo students
+    function setAttendance (address _addr, string memory _name, bool _isPresent) public {
+        attendanceSheet [_addr][_name] = _isPresent;
+    }
+
+    // Decalre a function to get the value for students
+    function getattendance (address _addr, string memory _name) public view returns (bool) {
+        return attendanceSheet[_addr][_name];
+    }
+   
+    }
+
+
+```
 
 ## Maping Practice
 This is a practice mapping from an address to string
