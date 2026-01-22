@@ -25,7 +25,7 @@ contract NestedMappingPractice {
     }
 ```
 
-## Maping Practice
+## Mapping Practice
 This is a practice mapping from an address to string
 
 ```soilidity
@@ -51,7 +51,6 @@ contract MappingPractice {
     function removeStudent (address _addr) public {
         delete students[_addr];
     }
-
 }
 ```
 
