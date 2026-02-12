@@ -1,4 +1,4 @@
-# practise-smart-contract-ethereum
+# Practise-smart-contract-ethereum
 
 ### Struct working with Array
 
